@@ -1,6 +1,6 @@
 ---
 type: review
-layout: list
+layout: reviews
 menu:
   main:
     weight: 20

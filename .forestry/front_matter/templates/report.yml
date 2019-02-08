@@ -3,6 +3,13 @@ label: Report
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  name: type
+  label: Type
+  hidden: true
+  config:
+    required: true
+  default: report
 - type: datetime
   name: date
   label: Date
@@ -36,10 +43,3 @@ fields:
   name: keywords
   label: Keywords
   description: Meta keywords for search engines
-- type: text
-  name: type
-  label: Type
-  hidden: true
-  config:
-    required: true
-  default: report

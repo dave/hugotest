@@ -3,6 +3,13 @@ label: Review
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  name: type
+  label: Type
+  hidden: true
+  config:
+    required: true
+  default: review
 - type: datetime
   name: date
   label: Date
