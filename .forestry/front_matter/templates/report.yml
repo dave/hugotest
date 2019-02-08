@@ -37,6 +37,6 @@ fields:
   label: Keywords
   description: Meta keywords for search engines
 pages:
-- content/reports/summer-haute-route-tour-du-mont-blanc.en.md
-- content/reports/ght-map-prep.fr.md
 - content/reports/ght-map-prep.en.md
+- content/reports/ght-map-prep.fr.md
+- content/reports/summer-haute-route-tour-du-mont-blanc.en.md
