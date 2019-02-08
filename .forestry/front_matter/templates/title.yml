@@ -10,6 +10,6 @@ fields:
     required: true
 pages:
 - content/expeditions/_index.en.md
-- content/reviews/_index.en.md
 - content/expeditions/_index.fr.md
+- content/reviews/_index.en.md
 - content/reviews/_index.fr.md
