@@ -36,3 +36,10 @@ fields:
   name: keywords
   label: Keywords
   description: Meta keywords for search engines
+- type: text
+  name: type
+  label: type
+  hidden: true
+  config:
+    required: true
+  default: report
