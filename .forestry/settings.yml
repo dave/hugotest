@@ -1,0 +1,75 @@
+---
+new_page_extension: md
+auto_deploy: true
+admin_path: admin
+webhook_url: 
+sections:
+- type: heading
+  label: English
+- type: directory
+  path: content/reports
+  label: Reports
+  create: all
+  match: "**/*.en.md"
+  new_doc_ext: en.md
+  templates:
+  - report
+- type: directory
+  path: content/reviews
+  label: Reviews
+  create: all
+  match: "**/*.en.md"
+  new_doc_ext: en.md
+  templates:
+  - review
+- type: directory
+  path: content/expeditions
+  label: Expeditions
+  create: all
+  match: "**/_index.en.md"
+  new_doc_ext: _index.en.md
+  templates:
+  - expedition
+- type: heading
+  label: Français
+- type: directory
+  path: content/reports
+  label: Reports
+  create: all
+  match: "**/*.fr.md"
+  new_doc_ext: fr.md
+  templates:
+  - report
+- type: directory
+  path: content/reviews
+  label: Reviews
+  create: all
+  match: "**/*.fr.md"
+  new_doc_ext: fr.md
+  templates:
+  - review
+- type: directory
+  path: content/expeditions
+  label: Expeditions
+  create: all
+  match: "**/_index.fr.md"
+  new_doc_ext: _index.fr.md
+  templates:
+  - expedition
+upload_dir: ''
+public_path: https://res.cloudinary.com/wildernessprime/image/upload/w_800,dpr_auto
+front_matter_path: ''
+use_front_matter_path: true
+file_template: ":filename:"
+build:
+  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
+  publish_command: hugo -d public
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.53
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.53
+  preview_output_directory: public
+  output_directory: public
+version: '0.53'

@@ -1,0 +1,32 @@
+{{ partial "htmlhead" . }}
+<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-loading">
+
+{{ $posts := .Pages }}
+{{ $postsPageSize := .Site.Params.Posts.pagesize | default 6 }}
+{{ $postsPaging := .Paginate $posts $postsPageSize }}
+
+<!-- Wrapper -->
+<div id="wrapper" data-ps="{{ $postsPageSize }}">
+
+	{{ partial "header" . }}
+	{{ partial "nav" . }}
+
+	<!-- Main -->
+	<div id="main">
+
+		<h1 id="title">{{ .Title }}</h1>
+
+		{{ .Content }}
+
+		{{ partial "posts/list.html" (dict "posts" $postsPaging "siteData" (index .Site.Data .Site.Language.Lang)) }}
+
+	</div>
+
+	{{ partial "footer/index" . }}
+	{{ partial "copyright" . }}
+
+</div>
+{{ template "_internal/google_analytics.html" . }}
+{{ partial "scripts/index" . }}
+</body>
+</html>

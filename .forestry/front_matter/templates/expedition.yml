@@ -1,0 +1,31 @@
+---
+label: Expedition
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  description: Publish date
+  config:
+    date_format: YYYY-MM-DD
+    time_format: hh:mm
+    display_utc: true
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: Summary of the page (for site previews / social sharing). No more than
+    150 characters.
+- type: file
+  name: image
+  label: Image
+  description: Image (for site preview / social sharing)
+pages:
+- content/expeditions/great-himalaya-trail-2019/_index.fr.md
+- content/expeditions/great-himalaya-trail-2019/_index.en.md
