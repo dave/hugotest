@@ -24,7 +24,7 @@ sections:
   path: content/expeditions
   label: Expeditions
   create: all
-  match: "**/_index.md"
+  match: "**/*.md"
   new_doc_ext: md
   templates:
   - expedition
