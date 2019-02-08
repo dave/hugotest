@@ -1,8 +1,22 @@
 ---
-label: Expedition
+label: Expedition (rename to _index.en.md)
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  name: type
+  label: Type
+  hidden: true
+  config:
+    required: true
+  default: expedition
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  config:
+    required: true
+  default: reports
 - type: text
   name: title
   label: Title

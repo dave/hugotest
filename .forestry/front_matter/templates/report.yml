@@ -38,7 +38,7 @@ fields:
   description: Meta keywords for search engines
 - type: text
   name: type
-  label: type
+  label: Type
   hidden: true
   config:
     required: true
