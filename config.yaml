@@ -13,6 +13,6 @@ languages:
     weight: 2
 params:
   cloudinary_base_url: https://res.cloudinary.com/wildernessprime/image/upload
-  folders: 
+  folders:
     - "expeditions"
     - "reviews"

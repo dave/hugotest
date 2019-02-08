@@ -36,12 +36,11 @@ fields:
   label: Image
   description: Image (for site preview / social sharing)
 - type: tag_list
-  name: expeditions
-  label: Expeditions
-  description: Which expeditions should this post be associated with?
-- type: tag_list
   name: keywords
   label: Keywords
   description: Meta keywords for search engines
 pages:
-- content/expeditions/foo/baaaa.en.md
+- content/expeditions/great-himalaya-trail-2019/ght-map-prep.en.md
+- content/expeditions/great-himalaya-trail-2019/ght-map-prep.fr.md
+- content/expeditions/summer-haute-route-2018/part-2-tbc.en.md
+- content/expeditions/summer-haute-route-2018/summer-haute-route-tour-du-mont-blanc.en.md
