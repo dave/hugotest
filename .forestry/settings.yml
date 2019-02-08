@@ -11,16 +11,16 @@ sections:
   label: Expeditions
   create: all
   match: "**/*.en.md"
-  new_doc_ext: .en.md
+  new_doc_ext: en.md
   templates:
-    - expedition
-    - report
+  - expedition
+  - report
 - type: directory
   path: content/reviews
   label: Reviews
   create: all
   match: "**/*.en.md"
-  new_doc_ext: .en.md
+  new_doc_ext: en.md
   templates:
   - review
 - type: heading
@@ -30,16 +30,16 @@ sections:
   label: Expeditions
   create: all
   match: "**/*.fr.md"
-  new_doc_ext: .fr.md
+  new_doc_ext: fr.md
   templates:
-    - expedition
-    - report
+  - expedition
+  - report
 - type: directory
   path: content/reviews
   label: Reviews
   create: all
   match: "**/*.fr.md"
-  new_doc_ext: .fr.md
+  new_doc_ext: fr.md
   templates:
   - review
 upload_dir: ''
